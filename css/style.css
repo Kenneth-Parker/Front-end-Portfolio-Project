@@ -127,6 +127,11 @@ body {
     /* background-color: blueviolet; */
     display: grid;
     padding: 11px;
+    /* border: rgb(202, 2, 246) solid 11px; */
+    align-content: center;
+}
+
+.img {
     border: rgb(202, 2, 246) solid 11px;
 }
 
