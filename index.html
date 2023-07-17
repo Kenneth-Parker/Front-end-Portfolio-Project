@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🐈 catSpace 😻</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/screenSize.css">
     <link rel="stylesheet" href="./css/darkMode.css" />
     <script src="./app.js" defer></script>
 </head>
+
 <body>
-    <H1>🚧 BE RIGHT BACK! 🚧</H1>
+    <H1>catSpace <br> 🚧 Under ⛑️ Construction! 🚧</H1>
+    <div class="grid-container">
+        <div class="header" id="catSpaceHome">
+            <img src="./assets/cat logo.PNG" width="100%" height="100%" alt="catSpace Logo Image">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a id="navhm" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Browse</a></li>
+            </ul>
+        </nav>
+        <div class="resources">
+            <h2>POST</h2>
+            <section class="filledForm-container" id="filledForm-container">
+            </section>
+            <section class="resource-container">
+                <div class="resource-image" id="resource-image-1" name="resource-image">
+                    <img src="https://cataas.com/cat/cute" width="100%" alt="Cute Cat Image">
+                </div>
+                <div class="resource-field" id="resource-field-1" name="resource-field">
+                    Owner: John Statham
+                    <hr>
+                    Cat Name: Tobias <br>
+                    <br>
+                    Post: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, illo voluptate sapiente et velit laboriosam nihil labore nulla repellat est impedit, recusandae eius enim harum. <br>
+                    <br>
+                    <button class="instock1">💜 Like 💜</button>
+                    <button id="resource-1">Delete Post</button>
+
+                </div>
+                <div class="resource-image" id="resource-image-2" name="resource-image">
+                    <img src="https://cataas.com/cat" width="100%" alt="Cat Image">
+                </div>
+                <div class="resource-field" id="resource-field-2" name="resource-field">
+                    Owner: Tyler Jackson
+                    <hr>
+                    Cat Name: Chalky <br>
+                    <br>
+                    Post: Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, optio. Iste earum aliquid dolores, magnam odio alias. Iusto reiciendis sint esse debitis consequatur praesentium itaque sapiente. Tenetur, blanditiis neque iure reprehenderit rem repellat exercitationem consectetur recusandae quam ducimus totam sequi hic velit adipisci itaque suscipit quas, deserunt molestias. Totam, ad.<br>
+                    <br>
+                    <button class="instock2">💜 Like 💜</button>
+                    <button id="resource-2">Delete Post</button>
+
+                </div>
+                <div class="resource-image" id="resource-image-3" name="resource-image">
+                    <img src="https://cataas.com/cat/fat" width="100%" alt="Fat Cat Image">
+                </div>
+                <div class="resource-field" id="resource-field-3" name="resource-field">
+                    Owner: Ken Parker
+                    <hr>
+                    Cat Name: Tai-Lung/Feisty <br>
+                    <br>
+                    Post: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolore velit, repudiandae nulla architecto esse, molestias assumenda excepturi eos ullam minima soluta deleniti commodi numquam earum eius sint labore neque sapiente aspernatur voluptatem error minus!<br>
+                    <br>
+                    <button class="instock3">💜 Like 💜</button>
+                    <button id="resource-3">Delete Post</button>
+
+                </div>
+            </section>
+
+        </div>
+        <div class="form-entry">Create a Post
+            <hr>
+            <div class="form">
+                <form>
+                    <label class="label" for="brand">Cat Name</label><br>
+                    <input class="input" type="text" id="brand" name="brand" placeholder="Ex: Mr. Tuxedo" value=""
+                        required><br>
+                    <br>
+                    <label class="label" for="name">Owner Name</label><br>
+                    <input class="input" type="text" id="name" name="name" placeholder="Ex: Mike Carver" value=""
+                        required><br>
+                    <br>
+                    <label class="label" for="my_textarea">Post</label><br>
+                    <textarea class="textArea" id="my_textarea" name="my_textarea" rows="7" cols="13.5"></textarea>
+                    <br><br>
+                    <!-- <label class="label" for="price">Price</label><br>
+                    <input class="input" type="number" min="0.00" step="0.01" id="price" name="price"
+                        placeholder="Ex: 17.99" value=""><br> -->
+                    <br>
+                    <label class="label" for="image">Image URL</label><br>
+                    <input class="input" type="url" id="image" name="image" placeholder="https://image.com"
+                        value=""><br><br>
+                    <!-- <label class="label" for="stock">In Stock</label><br>
+                    <select name="stock" id="stock">
+                        <option value="In Stock">--------- " Yes " ----------</option>
+                        <option value="Out of Stock">---------- " N0 " ----------</option>
+                    </select> -->
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset" style="margin-left: 11px;">
+                </form>
+            </div>
+        </div>
+        <div class="error-space">Error Space</div>
+        <div class="footer">
+            <img src="./assets/footerCatLogo.jpg" width="100%" alt="Resource Image">
+            <h3></h3>
+        </div>
+    </div>
 </body>
+
 </html>
