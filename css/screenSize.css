@@ -20,6 +20,10 @@
         display: none;
     }
 
+    .nav {
+        height: 44px;
+    }
+
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -40,11 +44,11 @@
         grid-template-rows: 1fr;
         grid-gap: 22px;
         grid-template-areas:
-            "resource-image" 
+            "resource-image"
             "resource-field";
         text-align: center;
         padding-bottom: 11px;
-        
+
     }
 
     .resource-image {
@@ -56,6 +60,6 @@
     .resource-field {
         border-bottom: rgb(119, 2, 146) solid 11px;
         border-left: rgb(119, 2, 146) solid 11px;
-        border-right:rgb(119, 2, 146) solid 11px;
+        border-right: rgb(119, 2, 146) solid 11px;
     }
 }
