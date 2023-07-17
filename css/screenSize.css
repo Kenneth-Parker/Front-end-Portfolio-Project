@@ -1,0 +1,61 @@
+@media screen and (max-width: 767px) {
+    body {
+        background-color: rgb(202, 2, 246);
+    }
+
+    body {
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* height: 100vh; */
+        /* display: grid; */
+        justify-content: center;
+        align-items: center;
+        /* font-size: 1.2rem; */
+        /* background-color: rgb(149, 149, 149); */
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "resource"
+            "form"
+            "error"
+            "footer";
+
+    }
+
+    .resource-container {
+        display: grid;
+        /* background-color: #3f163f87; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 22px;
+        grid-template-areas:
+            "resource-image" 
+            "resource-field";
+        text-align: center;
+        padding-bottom: 11px;
+        
+    }
+
+    .resource-image {
+        border-top: rgb(119, 2, 146) solid 11px;
+        border-left: rgb(119, 2, 146) solid 11px;
+        border-right: rgb(119, 2, 146) solid 11px;
+    }
+
+    .resource-field {
+        border-bottom: rgb(119, 2, 146) solid 11px;
+        border-left: rgb(119, 2, 146) solid 11px;
+        border-right:rgb(119, 2, 146) solid 11px;
+    }
+}
