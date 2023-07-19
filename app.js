@@ -286,12 +286,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Toggle inStock Resource (Assuming the stock select element is used, uncomment it)
-        // const inStockButton = document.getElementById(`id-${name}`);
-        // let isInStock = true;
-        // inStockButton.addEventListener("click", (event) => {
-        //     isInStock = !isInStock;
-        //     inStockButton.textContent = isInStock ? "In Stock" : "Out of Stock";
-        // });
+        const inStockButton = document.getElementById(`id-${name}`);
+        let isInStock = true;
+        inStockButton.addEventListener("click", (event) => {
+            isInStock = !isInStock;
+            inStockButton.textContent = isInStock ? "💟 Like 💟" : "❤️";
+            inStockButton.style.backgroundColor = isInStock ? backgroundColor1 : backgroundColor;
+        });
     });
 });
 
