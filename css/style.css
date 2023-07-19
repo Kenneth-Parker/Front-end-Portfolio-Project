@@ -42,7 +42,7 @@ body {
 
 .header {
     grid-area: header;
-    border: rgb(202, 2, 246) solid 5px;
+    border: #ca02f6 solid 5px;
 }
 
 .nav {
