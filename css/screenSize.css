@@ -108,4 +108,19 @@
     .people {
         align-content: center;
     }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 22px;
+        grid-template-areas:
+            "header"
+            "nav"
+            "contact"
+            "contact-image"
+            "contact-about"
+            "footer";
+        align-content: center;
+    }
 }

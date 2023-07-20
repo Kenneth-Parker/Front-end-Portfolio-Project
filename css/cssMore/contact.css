@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 22px;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "contact contact-image"
+        "contact-about contact-about"
+        "footer footer";
+    align-content: center;
+}
+
+.header {
+    grid-area: header;
+    border: #ca02f6 solid 5px;
+}
+
+.nav {
+    grid-area: nav;
+    margin: 0;
+    height: 22px;
+    background-color: #ffffff;
+    border: rgb(202, 2, 246) solid 5px;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    font-size: 18px;
+    background-color: rgb(202, 2, 246);
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.img {
+    border: rgb(202, 2, 246) solid 7px;
+    border-radius: 11%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: font-size 0.2s ease, color 0.2s ease;
+}
+
+ul li a:hover {
+    font-size: 18px;
+    color: rgb(202, 2, 246);
+}
+
+.contact {
+    grid-area: contact;
+    display: grid;
+    text-align: left;
+}
+
+.contact-image {
+    grid-area: contact-image;
+    display: grid;
+    padding-right: 21px;
+}
+
+.contact-about {
+    grid-area: contact-about;
+    display: grid;
+    padding: 11px;
+    align-content: center;
+}
+
+.footer {
+    grid-area: footer;
+}
