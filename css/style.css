@@ -27,18 +27,18 @@ body {
 .grid-container {
     display: grid;
     /* background-color: #3f163f87; */
-    grid-template-columns: .5fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     /* grid-gap: 22px; */
     grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "resource resource form"
-        "resource resource ad-space"
-        "resource resource ad-space"
-        "resource resource ad-space"
-        "resource resource error"
-        "footer footer footer";
+        "header header"
+        "nav nav"
+        "resource form"
+        "resource ad-space"
+        "resource ad-space"
+        "resource ad-space"
+        "resource error"
+        "footer footer";
     text-align: center;
 }
 
@@ -182,8 +182,14 @@ body {
 
 .ad-space {
     grid-area: ad-space;
+    margin: 22px;
     border: #ca02f6 double 2px;
     border-radius: 10%;
+}
+
+.ad-img {
+    border: #ca02f6 double 2px;
+    border-radius: 11%;
 }
 
 .footer {
