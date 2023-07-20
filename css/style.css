@@ -27,14 +27,16 @@ body {
 .grid-container {
     display: grid;
     /* background-color: #3f163f87; */
-    grid-template-columns: 1fr;
+    grid-template-columns: .5fr 2fr 1fr;
     grid-template-rows: 1fr;
     /* grid-gap: 22px; */
     grid-template-areas:
         "header header header"
         "nav nav nav"
         "resource resource form"
-        "resource resource form"
+        "resource resource ad-space"
+        "resource resource ad-space"
+        "resource resource ad-space"
         "resource resource error"
         "footer footer footer";
     text-align: center;
@@ -85,7 +87,7 @@ body {
     /* display: grid; */
     /* background-color: #3f163f87; */
     grid-template-columns: .5fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 11px;
     grid-template-areas:
         "filledForm-image filledForm-field"
@@ -132,7 +134,8 @@ body {
 }
 
 .img {
-    border: rgb(202, 2, 246) solid 11px;
+    border: rgb(202, 2, 246) solid 7px;
+    border-radius: 11%;
 }
 
 .resource-field {
@@ -146,9 +149,9 @@ body {
     padding-top: 44px;
 
 
-    .form {
+    /* .form {
         padding-top: 22px;
-    }
+    } */
 
     .input {
         color: chartreuse;
@@ -161,22 +164,6 @@ body {
         transition: all .25s ease-in-out;
     }
 
-    input[type="number"] {
-        text-align: right;
-        margin-right: 10px;
-
-        /* Add currency marker */
-        &::after {
-            content: "$";
-            margin-left: 5px;
-        }
-    }
-
-    .label {
-        padding-bottom: 111px;
-    }
-
-    
 }
 
 .textArea {
@@ -191,8 +178,13 @@ body {
 .error-space {
     grid-area: error;
     display: none;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+}
+
+.ad-space {
+    grid-area: ad-space;
+    border: #ca02f6 double 2px;
+    border-radius: 10%;
+    bod
 }
 
 .footer {

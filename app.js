@@ -245,9 +245,10 @@ document.addEventListener("DOMContentLoaded", () => {
         resourceImage.id = `resource-image-${name}`;
         resourceImage.innerHTML = "";
         const img = document.createElement("img");
+        img.className = "img";
         img.src = image === '' ? "./assets/smallerCatLogo.PNG" : image;
         img.alt = "Resource Image";
-        img.style.width = "100%";
+        img.style.width = "95%";
         resourceImage.appendChild(img);
         resourceContainer.appendChild(resourceImage);
 
