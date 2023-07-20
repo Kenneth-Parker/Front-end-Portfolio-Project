@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: dark), screen and (max-width: 767px)  {
+@media (prefers-color-scheme: dark)  {
     * {
         background-color: rgba(47, 47, 47, 0.75);
         color: rgb(255, 225, 90);

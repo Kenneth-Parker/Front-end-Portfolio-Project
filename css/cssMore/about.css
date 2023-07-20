@@ -1,0 +1,128 @@
+
+/* * {
+    border: orange solid 1px;
+} */
+
+
+/* * {
+     border-top: 1px solid red;
+     border-bottom: 1px solid red;
+     border-left: 1px dashed blue;
+     border-right: 1px dashed blue;
+ } */
+
+/* * {
+    border: orange solid 1px;
+} */
+
+
+
+body {
+    margin: 0;
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* height: 100vh; */
+    /* display: grid; */
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1.2rem; */
+    /* background-color: rgb(149, 149, 149); */
+}
+
+.about-container {
+    display: grid;
+    /* background-color: #3f163f87; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 22px;
+    padding: 22px;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "about-text1 about-image1"
+        "about-text1 about-text2"
+        "about-image2 about-text2"
+        "error error"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    border: #ca02f6 solid 5px;
+}
+
+.nav {
+    grid-area: nav;
+    margin: 0%;
+    height: 22px;
+    background-color: #ffffff;
+    border: rgb(202, 2, 246) solid 5px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    font-size: 18px;
+    background-color: rgb(202, 2, 246);
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.img {
+    border: rgb(202, 2, 246) solid 7px;
+    border-radius: 11%;
+}
+
+.about-text1 {
+    grid-area: about-text1;
+    display: grid;
+    text-align: left;
+}
+
+.about-image1 {
+    grid-area: about-image1;
+    display: grid;
+}
+
+.about-text2 {
+    grid-area: about-text2;
+    display: grid;
+    text-align: right;
+}
+
+.about-image2 {
+    grid-area: about-image2;
+    display: grid;
+}
+
+.error-space {
+    grid-area: error;
+    display: none;
+}
+
+
+
+.footer {
+    grid-area: footer;
+}
+
+
