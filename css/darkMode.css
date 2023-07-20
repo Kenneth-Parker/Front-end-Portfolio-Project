@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: dark), screen and (max-width: 767px)  {
+    * {
+        background-color: rgba(47, 47, 47, 0.75);
+        color: rgb(255, 225, 90);
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .textArea {
+        color: rgb(255, 255, 255);
+    }
+    
+}
+
