@@ -192,6 +192,12 @@ body {
     border-radius: 11%;
 }
 
+.ad-img:hover {
+    background-color: rgb(202, 2, 246);
+    padding: 7px;
+    width: 85%;
+}
+
 .footer {
     grid-area: footer;
 }
