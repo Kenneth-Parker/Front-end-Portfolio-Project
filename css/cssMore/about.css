@@ -1,4 +1,3 @@
-
 /* * {
     border: orange solid 1px;
 } */
@@ -41,9 +40,9 @@ body {
         "header header"
         "nav nav"
         "about-text1 about-image1"
-        "about-text1 about-text2"
-        "about-image2 about-text2"
-        "error error"
+        "people about-text2"
+        "peoplpe about-text2"
+        "error-space error-space"
         "footer footer";
 }
 
@@ -114,15 +113,35 @@ body {
     display: grid;
 }
 
-.error-space {
-    grid-area: error;
-    display: none;
+.people {
+    grid-area: people;
+    display: grid;
 }
+
+.error-space {
+    grid-area: error-space;
+    display: grid;
+    border: 3px solid #aa5042;
+    padding: 25px;
+    text-align: center;
+}
+
+.card {
+    /* margin: 0 auto;
+    padding: 25px; */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card img {
+    border: rgb(202, 2, 246) solid 7px;
+    border-radius: 11%;
+    margin-bottom: 5px;
+    width: 65%;
+  }
 
 
 
 .footer {
     grid-area: footer;
 }
-
-

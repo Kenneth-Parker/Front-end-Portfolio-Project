@@ -90,13 +90,22 @@
             "about-text1"
             "about-image1"
             "about-text2"
-            "about-image2"
-            "error"
+            "error-space"
+            "people"
+            "owner"            
             "footer";
         text-align: center;
     }
 
     .about-text1, .about-text2 {
         text-align: center;
+    }
+
+    .about-image1 {
+        align-content: center;
+    }
+
+    .people {
+        align-content: center;
     }
 }
