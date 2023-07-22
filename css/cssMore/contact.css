@@ -65,12 +65,12 @@ body {
 
 ul li a {
     text-decoration: none;
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 16px;
     transition: font-size 0.2s ease, color 0.2s ease;
 }
 
-ul li a:hover {
+.links:hover {
     font-size: 18px;
     color: rgb(202, 2, 246);
 }
