@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 22px;
+    /* grid-gap: 22px; */
     grid-template-areas:
         "header header"
         "nav nav"

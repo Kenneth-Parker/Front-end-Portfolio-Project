@@ -82,7 +82,7 @@
         /* background-color: #3f163f87; */
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 22px;
+        /* grid-gap: 22px; */
         /* padding: 22px; */
         grid-template-areas:
             "header"
@@ -113,7 +113,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 22px;
+        /* grid-gap: 22px; */
         grid-template-areas:
             "header"
             "nav"
